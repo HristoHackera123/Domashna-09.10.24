@@ -12,3 +12,4 @@ C:\Users\encho\source\repos\List Sortirane\Zad\obj\Debug\net8.0\refint\Zad.dll
 C:\Users\encho\source\repos\List Sortirane\Zad\obj\Debug\net8.0\Zad.pdb
 C:\Users\encho\source\repos\List Sortirane\Zad\obj\Debug\net8.0\Zad.genruntimeconfig.cache
 C:\Users\encho\source\repos\List Sortirane\Zad\obj\Debug\net8.0\ref\Zad.dll
+C:\Users\encho\source\repos\List Sortirane\Zad\obj\Debug\net8.0\Zad.sourcelink.json

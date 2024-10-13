@@ -16,16 +16,12 @@
             SortList(list);
             DisplayList(list);
             Console.WriteLine("     Filtered List:");
-            FilterList(list);
-            DisplayList(list);
+            DisplayList(FilterList(list));
 
         }
         static void DisplayList(List<int> list)
         {
-            for (int i = 0; i < list.Count; i++)
-            {
-                Console.Write($"{list[i]} ");
-            }
+            
             Console.WriteLine(string.Join(", ", list));
         }
         static void SortList(List<int> list)
@@ -42,15 +38,16 @@
                 list[index] = key;
             }
         }
-        static void FilterList(List<int> list)
+        static List<int> FilterList(List<int> list)
         {
-            for (int i = list.Count - 1; i >= 0; i--)
-            {
-                if (list[i] < 0 && list[i] % 2 != 0)
-                {
-                    list.Remove(list[i]);
-                }
-            }
+            return list.Where(x => x > 0 || x % 2 == 0).ToList();
+            //for (int i = list.Count - 1; i >= 0; i--)
+            //{
+            //    if (list[i] < 0 && list[i] % 2 != 0)
+            //    {
+            //        list.Remove(list[i]);
+            //    }
+            //}
         }
     }
 }
